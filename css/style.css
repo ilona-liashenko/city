@@ -1,0 +1,53 @@
+body {
+    color: slategrey;
+}
+header {
+    background: linear-gradient(180deg, #caddffde 13%, #ffffff 100%);
+}
+h1 {
+    color: #16697a;
+    text-align: center;
+    text-transform: uppercase;
+}
+h2 {
+    color: steelblue; 
+}
+nav a {
+    color: #4f6d7a;
+}
+.article h3 {
+    color: yellowgreen;
+}
+.section-overview {
+    background-color: #ede7e3;
+}
+.section-overview h3 {
+    color: #dd6e42;
+}
+table, th, td {
+    border: 1px solid;
+}
+.table-head tr {
+    background-color: yellow;
+}
+.section-overview p strong {
+    color: navy;
+}
+.iframe {
+    width: 560px;
+    height: 315px;
+}
+.section-climate {
+    background-color: #ffe6a7;
+}
+.section-education {
+    background-color: #ebebeb;
+}
+.section-education a {
+    color: #f9a620;
+}
+footer {
+    background-color: #33658a;
+    color: white;
+}
+

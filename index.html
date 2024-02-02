@@ -3,11 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Lesson 2 HW - Ivano-Frankivsk</title>
   </head>
-  <body bgcolor="aliceblue" style="color: slategrey">
+  <body>
     <header>
-      <h1 style="color: royalblue">My hometown Ivano-Frankivsk</h1>
+      <br />
+      <h1>My hometown Ivano-Frankivsk</h1>
+      <br />
       <hr />
     </header>
     <nav>
@@ -23,17 +27,19 @@
         <img src="./img/Ivano-Frankivsk-min.jpg" alt="Ivano-Frankivsk" />
         <figcaption>Ivano-Frankivsk view, Ukraine.</figcaption>
       </figure>
-      <section>
-        <h2 style="color: steelblue" id="overview">Overview</h2>
+      <section class="section-overview">
+        <br />
+        <br />
+        <h2 id="overview">Overview</h2>
         <p>
-          <strong style="color: navy">Ivano-Frankivsk (Ukrainian: Івано-Франківськ)</strong>, formerly Stanyslaviv and Stanislav, is a city in western Ukraine.
+          <strong>Ivano-Frankivsk (Ukrainian: Івано-Франківськ)</strong>, formerly Stanyslaviv and Stanislav, is a city in western Ukraine.
           It serves as the administrative centre of Ivano-Frankivsk Oblast as well as Ivano-Frankivsk Raion within the oblast. Ivano-Frankivsk also hosts the
           administration of Ivano-Frankivsk urban hromada. Its population is 238,196 (2022 estimate). Ivano-Frankivsk is one of the principal cities of the
           Carpathian Euroregion. There are elements of various cultures intertwined in the city's architecture, including the Polish city hall, the
           Austro-Hungarian city's business centre, the Soviet prefabricated apartment blocks at the city's ruralurban fringe, and others.
         </p>
         <div>
-          <h3 style="color: steelblue">City advantages:</h3>
+          <h3>City advantages:</h3>
           <ul>
             <li>Location in Ukraine <meter value="100" min="0" max="100"></meter></li>
             <li>Sightseeings <meter value="97" min="0" max="100"></meter></li>
@@ -42,9 +48,35 @@
             <li>Best city to live <meter value="100" min="0" max="100"></meter></li>
           </ul>
         </div>
+        <table class="table">
+          <h3>General Information</h3>
+          <thead class="table-head">
+            <tr>
+              <th>Established</th>
+              <th>Area</th>
+              <th>Population</th>
+            </tr>
+          </thead>
+          <thead>
+            <tr>
+              <th>1662</th>
+              <th>83.7 km<sup>2</sup></th>
+              <th>238,196</th>
+            </tr>
+          </thead>
+        </table>
+        <div>
+          <h3>Watch Ivano-Frankivsk on YouTube!</h3>
+          <iframe class="iframe" src="https://www.youtube.com/embed/GJfvUTX47HE?si=coR0eqsf5tez_b5Z" allowfullscreen></iframe>
+        </div>
+        <br />
+        <br />
+        <br />
       </section>
       <section>
-        <h2 style="color: steelblue" id="geography">Geography</h2>
+        <br />
+        <br />
+        <h2 id="geography">Geography</h2>
         <p>
           The city is situated in the Carpathian region northeast of the mountain range, sitting approximately 120 metres (390 ft) above mean sea level. One of
           the several main geographical features is the Vovchynets Hill also known as the Vovchynets Mountains. The hill reaches 300-350 metres (1,150 ft) above
@@ -56,19 +88,30 @@
           Kalush (west), and Halych (north). The city also administers five adjacent villages that surround it: Mykytyntsi, Krykhivtsi, Vovchynets, Uhornyky,
           and Khryplyn.
         </p>
+        <br />
+        <br />
       </section>
-      <section>
-        <h2 style="color: steelblue" id="climate">Climate</h2>
+      <section class="section-climate">
+        <br />
+        <br />
+        <h2 id="climate">Climate</h2>
         <p>
           As is the case with most of Ukraine, the climate is moderate continental with warm summers, and fairly cold winters. The following climate data
           provided is for the past 62 years. The average number of days with precipitation is 170 spread almost equally throughout a year. Most precipitation
           takes place during the winter months and least – early fall. Thunderstorms occur mostly in summer months averaging around 25 annually. Ivano-Frankivsk
           averages about 296 days of fog or misty days with about 24 per month.
         </p>
+        <br />
         <img src="./img/climate.png" alt="climate table in IF" />
+        <br />
+        <br />
+        <br />
+        <br />
       </section>
-      <section>
-        <h2 style="color: steelblue" id="education">Education</h2>
+      <section class="section-education">
+        <br />
+        <br />
+        <h2 id="education">Education</h2>
         The city has over 25 public schools of general education for grades 1 through 11. There are also some privately owned schools and lyceums. In addition,
         the city has several professional public institutes. There also numerous sports schools: Fitness Sport Association "Ukraine" – 5 schools, MVK – 3
         schools, Fitness Sport Association "Spartak" – 2 schools, Fitness Sport Association "Kolos" – 1 school, and the others.
@@ -134,36 +177,16 @@
             </details>
           </li>
         </ol>
+        <br />
+        <br />
       </section>
     </main>
-    <table border="1">
-      <h2 style="color: steelblue">Geheral Information</h2>
-      <thead>
-        <tr bgcolor="yellow">
-          <th>Established</th>
-          <th>Area</th>
-          <th>Population</th>
-        </tr>
-      </thead>
-      <thead>
-        <tr>
-          <th>1662</th>
-          <th>83.7 km2</th>
-          <th>238,196</th>
-        </tr>
-      </thead>
-    </table>
-    <div>
-      <h2 style="color: steelblue">Watch Ivano-Frankivsk on YouTube!</h2>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/GJfvUTX47HE?si=coR0eqsf5tez_b5Z" allowfullscreen></iframe>
-    </div>
-    <br />
     <aside>
       <p><q>Home is where your heart is...</q><cite>Elvis Presley</cite></p>
     </aside>
     <br />
-    <article>
-      <h3 style="color: yellowgreen">Ivano-Frankivsk released the first six innovation projects</h3>
+    <article class="article">
+      <h3>Ivano-Frankivsk released the first six innovation projects</h3>
       <p>
         <i>
           Ivano-Frankivsk released the first six innovative projects that took place under the DOBRE program with the support of Ivano-Frankivsk City Council
@@ -178,26 +201,34 @@
       <br />
       <form action="submit">
         <fieldset>
-          <legend style="color: steelblue"><b>Contact us if you want to visit Ivano-Frankivsk!:)</b></legend>
+          <legend><b>Contact us if you want to visit Ivano-Frankivsk!:)</b></legend>
           <br />
           <label for="name">Your Name</label>
-          <input type="text" id="name" name="name" required />
+          <input type="text" id="name" name="name" placeholder="name" required/>
           <br />
           <br />
           <label for="surname">Your Surname</label>
-          <input type="text" id="surname" name="surname" required />
+          <input type="text" id="surname" name="surname" placeholder="surname" required />
           <br />
           <br />
           <label for="email">Your Email</label>
-          <input type="text" id="email" name="email" required />
+          <input type="email" id="email" name="email" placeholder="email" required />
+          <br />
+          <br />
+          <input type="radio" id="radio-yes" name="radio">
+          <label for="radio-yes">I've already been to this city</label>
+          <br>
+          <input type="radio" id="radio-no" name="radio">
+          <label for="radio-no">I have never been to this city</label>
           <br />
           <br />
           <label for="comment">Comment</label>
-          <textarea name="comment" id="comment" cols="50" rows="5"></textarea>
+          <textarea name="comment" id="comment" placeholder="write us a message" cols="50" rows="5"></textarea>
           <br />
           <br />
           <button type="submit">Submit</button>
-          <br>
+          <br />
+          <br />
         </fieldset>
       </form>
       <br />
@@ -206,7 +237,6 @@
       <br />
       <br />
       <br />
-      <hr />
     </footer>
   </body>
 </html>
