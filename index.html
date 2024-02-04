@@ -3,44 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Lesson 2 HW - Ivano-Frankivsk</title>
   </head>
   <body>
-    <header>
-      <br />
-      <h1>My hometown Ivano-Frankivsk</h1>
-      <br />
-      <hr />
+    <header class="header">
+      <img class="logo" src="./img/Ivano-Frankivsk_Coat_of_Arms.png" alt="Ivano-Frankivsk Coat of Arms" />
+      <nav class="header-nav">
+        <ul class="nav-list">
+          <li class="nav-li"><a class="nav-link" href="#overview">Overview</a></li>
+          <li class="nav-li"><a class="nav-link" href="#geography">Geography</a></li>
+          <li class="nav-li"><a class="nav-link" href="">Climate</a></li>
+          <li class="nav-li"><a class="nav-link" href="">Education</a></li>
+        </ul>
+      </nav>
+      <form class="header-form" action="#">
+        <div class="header-form-container">
+          <!-- <label for="search"></label> -->
+          <input class="header-form-input" name="search" type="text" placeholder="Search" />
+          <button class="header-form-button" type="submit">Search</button>
+        </div>
+      </form>
     </header>
-    <nav>
-      <ul>
-        <li><a href="#overview">Overview</a></li>
-        <li><a href="#geography">Geography</a></li>
-        <li><a href="#climate">Climate</a></li>
-        <li><a href="#education">Education</a></li>
-      </ul>
-    </nav>
-    <main>
-      <figure>
-        <img src="./img/Ivano-Frankivsk-min.jpg" alt="Ivano-Frankivsk" />
-        <figcaption>Ivano-Frankivsk view, Ukraine.</figcaption>
-      </figure>
-      <section class="section-overview">
-        <br />
-        <br />
-        <h2 id="overview">Overview</h2>
-        <p>
-          <strong>Ivano-Frankivsk (Ukrainian: Івано-Франківськ)</strong>, formerly Stanyslaviv and Stanislav, is a city in western Ukraine.
-          It serves as the administrative centre of Ivano-Frankivsk Oblast as well as Ivano-Frankivsk Raion within the oblast. Ivano-Frankivsk also hosts the
-          administration of Ivano-Frankivsk urban hromada. Its population is 238,196 (2022 estimate). Ivano-Frankivsk is one of the principal cities of the
-          Carpathian Euroregion. There are elements of various cultures intertwined in the city's architecture, including the Polish city hall, the
-          Austro-Hungarian city's business centre, the Soviet prefabricated apartment blocks at the city's ruralurban fringe, and others.
+    <main class="main">
+      <section class="main-figure">
+        <figure class="figure">
+          <img src="./img/Ivano-Frankivsk-min.jpg" alt="Ivano-Frankivsk" />
+          <!-- <figcaption>Ivano-Frankivsk view, Ukraine.</figcaption> -->
+        </figure>
+        <h1 class="main-title">My hometown Ivano-Frankivsk</h1>
+      </section>
+      <section class="section-overview section">
+        <h2 id="overview" class="section-title">Overview</h2>
+        <p class="section-description">
+          <strong class="overview-strong">Ivano-Frankivsk (Ukrainian: Івано-Франківськ)</strong>, formerly Stanyslaviv and Stanislav, is a city in western
+          Ukraine. It serves as the administrative centre of Ivano-Frankivsk Oblast as well as Ivano-Frankivsk Raion within the oblast. Ivano-Frankivsk also
+          hosts the administration of Ivano-Frankivsk urban hromada. Its population is 238,196 (2022 estimate).
+          <br />
+          <br />
+          Built in the mid-17th century as a fortress of the Polish Potocki family, Stanisławów was annexed to the Habsburg Empire during the First Partition of
+          Poland in 1772, after which it became the property of the State within the Austrian Empire. The fortress was slowly transformed into one of the most
+          prominent cities at the foothills of the Carpathian Mountains. After World War I, for several months, it served as a temporary capital of the West
+          Ukrainian People's Republic. Following the Peace of Riga in 1921, Stanisławów became part of the Second Polish Republic. After the Soviet invasion of
+          Poland at the onset of World War II, the city was annexed by the Soviet Union, only to be occupied by Nazi Germany two years later. With the
+          liberation of Soviet Ukraine in 1944 and the shifting of borders, the city remained part of the Ukrainian SSR and was renamed in 1962 after
+          <cite>Ivan Franko</cite>. With the fall of the Soviet Union in 1991, the city become part of newly independent Ukraine.
+          <br />
+          <br />
+          Ivano-Frankivsk is one of the principal cities of the Carpathian Euroregion. There are elements of various cultures intertwined in the city's
+          architecture, including the Polish city hall, the Austro-Hungarian city's business centre, the Soviet prefabricated apartment blocks at the city's
+          ruralurban fringe, and others.
         </p>
         <div>
           <h3>City advantages:</h3>
-          <ul>
+          <ul class="advantages">
             <li>Location in Ukraine <meter value="100" min="0" max="100"></meter></li>
             <li>Sightseeings <meter value="97" min="0" max="100"></meter></li>
             <li>Infrastructure <meter value="90" min="0" max="100"></meter></li>
@@ -68,16 +85,12 @@
         <div>
           <h3>Watch Ivano-Frankivsk on YouTube!</h3>
           <iframe class="iframe" src="https://www.youtube.com/embed/GJfvUTX47HE?si=coR0eqsf5tez_b5Z" allowfullscreen></iframe>
+          <iframe class="iframe" src="https://www.youtube.com/embed/RMa6Q1a_-Pc?si=LmTzqiPU0Ytj_bjd" allowfullscreen></iframe>
         </div>
-        <br />
-        <br />
-        <br />
       </section>
-      <section>
-        <br />
-        <br />
-        <h2 id="geography">Geography</h2>
-        <p>
+      <section class="section-geography section">
+        <h2 id="geography" class="section-title">Geography</h2>
+        <p class="section-description">
           The city is situated in the Carpathian region northeast of the mountain range, sitting approximately 120 metres (390 ft) above mean sea level. One of
           the several main geographical features is the Vovchynets Hill also known as the Vovchynets Mountains. The hill reaches 300-350 metres (1,150 ft) above
           sea level and is part of the Pokuttya Highland (Upland). Around the hill Bystrytsia River branches into Bystrytsia of Nadvirna, Bystrytsia of
@@ -88,36 +101,47 @@
           Kalush (west), and Halych (north). The city also administers five adjacent villages that surround it: Mykytyntsi, Krykhivtsi, Vovchynets, Uhornyky,
           and Khryplyn.
         </p>
-        <br />
-        <br />
+        <div class="figures-container">
+          <div class="geography-images">
+            <figure>
+              <img src="./img/ivano-frankivsk-1.jpg" alt="Ivano-Frankivsk image" />
+            </figure>
+            <figcaption>Sheptytskyi's square view</figcaption>
+          </div>
+          <div class="geography-images">
+            <figure>
+              <img src="./img/ivano-frankivsk-3.jpg" alt="Ivano-Frankivsk image" />
+            </figure>
+            <figcaption>Mitskevych's square view</figcaption>
+          </div>
+          <div class="geography-images">
+            <figure>
+              <img src="./img/ivano-frankivsk-2.jpg" alt="Ivano-Frankivsk image" />
+            </figure>
+            <figcaption>City Hall view</figcaption>
+          </div>
+        </div>
       </section>
-      <section class="section-climate">
-        <br />
-        <br />
-        <h2 id="climate">Climate</h2>
-        <p>
+      <section class="section-climate section">
+        <h2 id="climate" class="section-title">Climate</h2>
+        <p class="section-description">
           As is the case with most of Ukraine, the climate is moderate continental with warm summers, and fairly cold winters. The following climate data
           provided is for the past 62 years. The average number of days with precipitation is 170 spread almost equally throughout a year. Most precipitation
           takes place during the winter months and least – early fall. Thunderstorms occur mostly in summer months averaging around 25 annually. Ivano-Frankivsk
           averages about 296 days of fog or misty days with about 24 per month.
         </p>
-        <br />
-        <img src="./img/climate.png" alt="climate table in IF" />
-        <br />
-        <br />
-        <br />
-        <br />
+        <img class="climate-image" src="./img/climate.png" alt="climate table in IF" />
       </section>
-      <section class="section-education">
-        <br />
-        <br />
-        <h2 id="education">Education</h2>
-        The city has over 25 public schools of general education for grades 1 through 11. There are also some privately owned schools and lyceums. In addition,
-        the city has several professional public institutes. There also numerous sports schools: Fitness Sport Association "Ukraine" – 5 schools, MVK – 3
-        schools, Fitness Sport Association "Spartak" – 2 schools, Fitness Sport Association "Kolos" – 1 school, and the others.
+      <section class="section-education section">
+        <h2 id="education" class="section-title">Education</h2>
+        <p class="section-description">
+          The city has over 25 public schools of general education for grades 1 through 11. There are also some privately owned schools and lyceums. In
+          addition, the city has several professional public institutes. There also numerous sports schools: Fitness Sport Association "Ukraine" – 5 schools,
+          MVK – 3 schools, Fitness Sport Association "Spartak" – 2 schools, Fitness Sport Association "Kolos" – 1 school, and the others.
+        </p>
         <ol>
-          <li>
-            <a href="https://pnu.edu.ua/en/"> Vasyl Stefanyk Precarpathian National University </a>
+          <li class="education-item">
+            <a class="education-link" href="https://pnu.edu.ua/en/"> Vasyl Stefanyk Precarpathian National University </a>
             <address>Shevchenko Street 57, Ivano-Frankivsk, Ivano-Frankivsk Oblast, 76018, Ukraine</address>
             <details>
               <summary>About</summary>
@@ -131,9 +155,8 @@
               <p>Open from <time>08:00</time> to <time>18:00</time> on weekdays</p>
             </details>
           </li>
-          <br />
-          <li>
-            <a href="https://nung.edu.ua/en/node/1"> Ivano-Frankivsk National Technical University of Oil and Gas </a>
+          <li class="education-item">
+            <a class="education-link" href="https://nung.edu.ua/en/node/1"> Ivano-Frankivsk National Technical University of Oil and Gas </a>
             <address>Karpatska Street 15, Ivano-Frankivsk, Ivano-Frankivsk Oblast, 76019, Ukraine</address>
             <details>
               <summary>About</summary>
@@ -148,9 +171,8 @@
               <p>Open from <time>08:00</time> to <time>18:00</time> on weekdays</p>
             </details>
           </li>
-          <br />
-          <li>
-            <a href="https://www.ifnmu.edu.ua/en/"> Ivano-Frankivsk National Medical University </a>
+          <li class="education-item">
+            <a class="education-link" href="https://www.ifnmu.edu.ua/en/"> Ivano-Frankivsk National Medical University </a>
             <address>Halytska St. 2., Ivano-Frankivsk, Ivano-Frankivsk Oblast, 76019, Ukraine</address>
             <details>
               <summary>About</summary>
@@ -163,9 +185,8 @@
               <p>Open from <time>08:00</time> to <time>18:00</time> on weekdays</p>
             </details>
           </li>
-          <br />
-          <li>
-            <a href="https://ukd.edu.ua/en"> King Daniel of Galicia Ivano-Frankivsk University of Law </a>
+          <li class="education-item">
+            <a class="education-link" href="https://ukd.edu.ua/en"> King Daniel of Galicia Ivano-Frankivsk University of Law </a>
             <address>E. Konovaltsia, 35, Ivano-Frankivsk, Ivano-Frankivsk Oblast, 76018, Ukraine</address>
             <details>
               <summary>About</summary>
@@ -177,14 +198,11 @@
             </details>
           </li>
         </ol>
-        <br />
-        <br />
       </section>
     </main>
-    <aside>
+    <!-- <aside>
       <p><q>Home is where your heart is...</q><cite>Elvis Presley</cite></p>
     </aside>
-    <br />
     <article class="article">
       <h3>Ivano-Frankivsk released the first six innovation projects</h3>
       <p>
@@ -193,50 +211,33 @@
           and profile departments.
         </i>
       </p>
-    </article>
-    <br />
-    <footer>
-      <hr />
-      <br />
-      <br />
-      <form action="submit">
-        <fieldset>
-          <legend><b>Contact us if you want to visit Ivano-Frankivsk!:)</b></legend>
-          <br />
-          <label for="name">Your Name</label>
-          <input type="text" id="name" name="name" placeholder="name" required/>
-          <br />
-          <br />
-          <label for="surname">Your Surname</label>
-          <input type="text" id="surname" name="surname" placeholder="surname" required />
-          <br />
-          <br />
-          <label for="email">Your Email</label>
-          <input type="email" id="email" name="email" placeholder="email" required />
-          <br />
-          <br />
-          <input type="radio" id="radio-yes" name="radio">
-          <label for="radio-yes">I've already been to this city</label>
-          <br>
-          <input type="radio" id="radio-no" name="radio">
-          <label for="radio-no">I have never been to this city</label>
-          <br />
-          <br />
-          <label for="comment">Comment</label>
-          <textarea name="comment" id="comment" placeholder="write us a message" cols="50" rows="5"></textarea>
-          <br />
-          <br />
-          <button type="submit">Submit</button>
-          <br />
-          <br />
+    </article> -->
+    <footer class="footer section">
+      <form class="footer-form">
+        <fieldset class="footer-fieldset">
+          <legend class="fieldset-title"><b>Contact us if you want to visit Ivano-Frankivsk!:)</b></legend>
+          <div class="fieldset-item">
+            <label class="fieldset-name" for="name">Your Name</label>
+            <input class="fieldset-input" type="text" id="name" name="name" placeholder="name" required />
+            <label class="fieldset-name" for="surname">Your Surname</label>
+            <input class="fieldset-input" type="text" id="surname" name="surname" placeholder="surname" required />
+            <label class="fieldset-name" for="email">Your Email</label>
+            <input class="fieldset-input" type="email" id="email" name="email" placeholder="email" required />
+          </div>
+          <div class="fieldset-item">
+            <input class="fieldset-radio-input" type="radio" id="radio-yes" name="radio" />
+            <label class="fieldset-radio-name" for="radio-yes">I've already been to this city</label>
+            <input class="fieldset-radio-input" type="radio" id="radio-no" name="radio" />
+            <label class="fieldset-radio-name" for="radio-no">I have never been to this city</label>
+          </div>
+          <div class="fieldset-item">
+            <label class="fieldset-name" for="comment">Comment</label>
+            <textarea class="fieldset-textarea" name="comment" id="comment" placeholder="write us a message" cols="50" rows="5"></textarea>
+          </div>
+          <button class="fieldset-button" type="submit">Submit</button>
         </fieldset>
       </form>
-      <br />
-      <br />
       <small> Ivano-Frankivsk 2024. All rights reserved </small>
-      <br />
-      <br />
-      <br />
     </footer>
   </body>
 </html>
