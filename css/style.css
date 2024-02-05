@@ -27,11 +27,11 @@
   vertical-align: middle;
   margin-right: 100px;
 }
-.nav-li {
+.nav-list li {
   display: inline-block;
   margin-right: 80px;
 }
-.nav-link {
+.nav-list li a {
   text-decoration: none;
   color: #ffffff;
 }
@@ -41,33 +41,32 @@
   box-sizing: border-box;
   font-size: 0;
 }
-.header-form-input {
+.header-form input,
+.header-form button {
+  padding: 10px 7px;
   border: none;
+}
+.header-form input {
   outline: none;
 }
-.header-form-button {
-  border: none;
+.header-form button {
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
   background-color: #ffa305;
   color: #ffffff;
   cursor: pointer;
 }
-.header-form-input,
-.header-form-button {
-  padding: 10px 7px;
-}
 
-.figure,
-.main-title {
+.main-figure figure,
+.main-figure h1 {
   display: inline-block;
   vertical-align: middle;
 }
-.figure {
+.main-figure figure {
   font-size: 0;
 }
 
-.main-title {
+.main-figure h1 {
   text-transform: uppercase;
   color: #2750bd;
   font-size: 30px;
@@ -78,26 +77,26 @@
 .section-overview {
   background-color: #e5edf0;
 }
-
 .overview-strong {
   color: #2750bd;
   font-weight: bold;
 }
-
 .section-overview h3 {
   color: steelblue;
   font-weight: bold;
   margin-bottom: 10px;
 }
-.advantages {
+.advantages li {
+  margin-bottom: 7px;
+}
+/* .rate {
+  margin-bottom: 15px;
+} */
+.table {
   margin-bottom: 20px;
 }
-.rate {
-  margin-bottom: 15px;
-}
-table,
-th,
-td {
+.table th,
+.table td {
   border: 1px solid;
   padding: 10px 5px;
 }
@@ -105,10 +104,7 @@ td {
   background-color: yellow;
   font-weight: bold;
 }
-.table {
-  margin-bottom: 20px;
-}
-.iframe {
+iframe {
   width: 560px;
   height: 315px;
   margin-right: 30px;
@@ -120,52 +116,53 @@ td {
 .figures-container {
   margin-left: 100px;
 }
-.geography-images {
+.figures-container div {
   display: inline-block;
   margin-right: 20px;
 }
+
 .section-climate {
   background-color: #a2d6f9;
 }
-.climate-image {
+.section-climate img {
   margin-left: 100px;
 }
 .section-education {
   background-color: #0e6ba8;
   color: #ffffff;
 }
-.education-item {
+.section-education li {
   margin-bottom: 30px;
 }
-.education-link {
+.section-education li a {
   color: #91dde7;
   text-decoration: none;
 }
-aside,
+/* aside,
 article {
   background-color: #0e6ba8;
-}
+} */
 .footer {
   background-color: #33658a;
   color: #ffffff;
   background: linear-gradient(238deg, #03d7fc 1%, #2750bd);
 }
-.footer-fieldset {
+.footer-form fieldset {
   border: 1px solid white;
   padding: 30px 20px;
   margin-bottom: 50px;
 }
-.fieldset-title {
+.footer-form legend {
   font-size: 20px;
 }
 .fieldset-item {
   margin-bottom: 30px;
 }
-.fieldset-name,
-.fieldset-input {
+.fieldset-item label,
+.fieldset-item input {
   display: block;
 }
-.fieldset-input {
+.fieldset-item input {
   margin-bottom: 20px;
   border-radius: 4px;
   border: none;
@@ -174,10 +171,10 @@ article {
   height: 25px;
   width: 300px;
 }
-.fieldset-name {
+.fieldset-item label {
   margin-bottom: 5px;
 }
-.fieldset-button {
+.footer button {
   border: none;
   border-radius: 4px;
   background-color: #ffa305;
@@ -185,9 +182,13 @@ article {
   cursor: pointer;
   padding: 8px 15px;
 }
-.fieldset-textarea {
+.fieldset-radio-item {
+  margin-bottom: 15px;
+}
+.fieldset-item textarea {
   border-radius: 4px;
   border: none;
   outline: none;
   background-color: #e5edf0;
 }
+
