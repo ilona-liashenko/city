@@ -17,6 +17,18 @@
   cursor: pointer;
 }
 
+.button {
+  border: none;
+  background-color: #ffa305;
+  color: #ffffff;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #5e4212;
+  color: #ffffff;
+  transition: all ease-out .4s;
+}
+
 .header {
   padding: 10px 100px;
   height: 70px;
@@ -37,6 +49,9 @@
 .nav-list {
   width: 600px;
 }
+.nav-list {
+  width: 600px;
+}
 .nav-list li {
   display: inline-block;
   margin-right: 80px;
@@ -44,6 +59,9 @@
 .nav-list li a {
   text-decoration: none;
   color: #ffffff;
+}
+.nav-list li a:hover {
+  font-weight: bold;
 }
 
 .header-form {
@@ -58,6 +76,12 @@
 .header-form input {
   outline: none;
   border: none;
+}
+.header-form input:focus {
+  box-shadow: 0 0 15px #e5edf0;
+}
+.header-form input:focus::placeholder {
+  color: transparent;
 }
 .header-form button {
   border-top-right-radius: 6px;
@@ -123,6 +147,11 @@ iframe {
 .figures-container {
   margin-left: 100px;
 }
+.figures-container figure:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  transition: all ease-out .4s;
+}
 .figures-container div {
   display: inline-block;
   margin-right: 20px;
@@ -148,6 +177,11 @@ iframe {
 .section-education details p {
   color: #ffa305;
 }
+}
+.section-education li a:hover {
+  color: #ffa305;
+  transition: all .4s;
+  }
 /* aside,
 article {
   background-color: #0e6ba8;
@@ -197,3 +231,21 @@ article {
   outline: none;
   background-color: #e5edf0;
 }
+.fieldset-item input:focus,
+.fieldset-item textarea:focus {
+  box-shadow: 0 0 15px #e5edf0;
+}
+
+.fieldset-item input:focus::placeholder,
+.fieldset-item textarea:focus::placeholder {
+  color: transparent;
+}
+.footer button {
+  border: none;
+  border-radius: 4px;
+  background-color: #ffa305;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 8px 15px;
+}
+
