@@ -10,6 +10,18 @@
 .section-description {
   margin-bottom: 40px;
 }
+.button {
+  border: none;
+  background-color: #ffa305;
+  color: #ffffff;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #5e4212;
+  color: #ffffff;
+  transition: all ease-out .4s;
+}
+
 .header {
   padding: 10px 100px;
   height: 70px;
@@ -27,6 +39,9 @@
   vertical-align: middle;
   margin-right: 100px;
 }
+.nav-list {
+  width: 600px;
+}
 .nav-list li {
   display: inline-block;
   margin-right: 80px;
@@ -35,26 +50,32 @@
   text-decoration: none;
   color: #ffffff;
 }
+.nav-list li a:hover {
+  font-weight: bold;
+}
 
 .header-form {
   display: inline-block;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   font-size: 0;
 }
 .header-form input,
 .header-form button {
   padding: 10px 7px;
-  border: none;
 }
 .header-form input {
   outline: none;
+  border: none;
+}
+.header-form input:focus {
+  box-shadow: 0 0 15px #e5edf0;
+}
+.header-form input:focus::placeholder {
+  color: transparent;
 }
 .header-form button {
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
-  background-color: #ffa305;
-  color: #ffffff;
-  cursor: pointer;
 }
 
 .main-figure figure,
@@ -120,6 +141,11 @@ iframe {
   display: inline-block;
   margin-right: 20px;
 }
+.figures-container figure:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  transition: all ease-out .4s;
+}
 
 .section-climate {
   background-color: #a2d6f9;
@@ -137,6 +163,13 @@ iframe {
 .section-education li a {
   color: #91dde7;
   text-decoration: none;
+}
+.section-education li a:hover {
+  color: #ffa305;
+  transition: all .4s;
+  }
+.section-education details p {
+  color: #ffa305;
 }
 /* aside,
 article {
@@ -171,15 +204,15 @@ article {
   height: 25px;
   width: 300px;
 }
+.fieldset-item input:focus,
+.fieldset-item textarea:focus {
+  box-shadow: 0 0 15px #e5edf0;
+}
 .fieldset-item label {
   margin-bottom: 5px;
 }
 .footer button {
-  border: none;
   border-radius: 4px;
-  background-color: #ffa305;
-  color: #ffffff;
-  cursor: pointer;
   padding: 8px 15px;
 }
 .fieldset-radio-item {
@@ -192,3 +225,7 @@ article {
   background-color: #e5edf0;
 }
 
+.fieldset-item input:focus::placeholder,
+.fieldset-item textarea:focus::placeholder {
+  color: transparent;
+}
