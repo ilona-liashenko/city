@@ -16,11 +16,6 @@
   color: #ffffff;
   cursor: pointer;
 }
-.button:hover {
-  background-color: #5e4212;
-  color: #ffffff;
-  transition: all ease-out .4s;
-}
 
 .header {
   padding: 10px 100px;
@@ -50,9 +45,6 @@
   text-decoration: none;
   color: #ffffff;
 }
-.nav-list li a:hover {
-  font-weight: bold;
-}
 
 .header-form {
   display: inline-block;
@@ -66,12 +58,6 @@
 .header-form input {
   outline: none;
   border: none;
-}
-.header-form input:focus {
-  box-shadow: 0 0 15px #e5edf0;
-}
-.header-form input:focus::placeholder {
-  color: transparent;
 }
 .header-form button {
   border-top-right-radius: 6px;
@@ -141,11 +127,6 @@ iframe {
   display: inline-block;
   margin-right: 20px;
 }
-.figures-container figure:hover {
-  opacity: 0.7;
-  cursor: pointer;
-  transition: all ease-out .4s;
-}
 
 .section-climate {
   background-color: #a2d6f9;
@@ -164,10 +145,6 @@ iframe {
   color: #91dde7;
   text-decoration: none;
 }
-.section-education li a:hover {
-  color: #ffa305;
-  transition: all .4s;
-  }
 .section-education details p {
   color: #ffa305;
 }
@@ -204,10 +181,6 @@ article {
   height: 25px;
   width: 300px;
 }
-.fieldset-item input:focus,
-.fieldset-item textarea:focus {
-  box-shadow: 0 0 15px #e5edf0;
-}
 .fieldset-item label {
   margin-bottom: 5px;
 }
@@ -223,9 +196,4 @@ article {
   border: none;
   outline: none;
   background-color: #e5edf0;
-}
-
-.fieldset-item input:focus::placeholder,
-.fieldset-item textarea:focus::placeholder {
-  color: transparent;
 }
