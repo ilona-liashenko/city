@@ -1,7 +1,3 @@
-body {
-  font-family: 'Montserrat', sans-serif;
-  line-height: 26px;
-}
 .section {
   padding: 70px 100px;
 }
@@ -99,7 +95,7 @@ body {
 }
 .main-figure figure {
   
-  /* font-size: 0; */
+  font-size: 0;
   /* box-sizing: border-box; */
 }
 
