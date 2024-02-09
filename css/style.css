@@ -1,3 +1,7 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 26px;
+}
 .section {
   padding: 70px 100px;
 }
@@ -54,7 +58,7 @@
 }
 .nav-list li {
   display: inline-block;
-  margin-right: 80px;
+  margin-right: 65px;
 }
 .nav-list li a {
   text-decoration: none;
@@ -94,7 +98,9 @@
   vertical-align: middle;
 }
 .main-figure figure {
-  font-size: 0;
+  
+  /* font-size: 0; */
+  /* box-sizing: border-box; */
 }
 
 .main-figure h1 {
@@ -102,7 +108,7 @@
   color: #2750bd;
   font-size: 30px;
   font-weight: bold;
-  margin-left: 40px;
+  margin-left: 25px;
 }
 
 .section-overview {
