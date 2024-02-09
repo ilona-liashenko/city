@@ -1,3 +1,7 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .section {
   padding: 70px 100px;
 }
@@ -9,6 +13,7 @@
 }
 .section-description {
   margin-bottom: 40px;
+  line-height: 24px;
 }
 .button {
   border: none;
@@ -25,8 +30,10 @@
 }
 .button:hover {
   background-color: #5e4212;
-  color: #ffffff;
-  transition: all ease-out .4s;
+  transition: all ease-out .3s;
+}
+[placeholder] {
+  padding-left: 10px;
 }
 
 .header {
@@ -53,8 +60,10 @@
   width: 600px;
 }
 .nav-list li {
+  font-size: 14px;
   display: inline-block;
-  margin-right: 65px;
+  margin-right: 60px;
+  width: 85px;
 }
 .nav-list li a {
   text-decoration: none;
@@ -94,9 +103,7 @@
   vertical-align: middle;
 }
 .main-figure figure {
-  
   font-size: 0;
-  /* box-sizing: border-box; */
 }
 
 .main-figure h1 {
@@ -149,10 +156,17 @@ iframe {
 .figures-container {
   margin-left: 100px;
 }
+.figures-container figure {
+  margin-bottom: 15px;
+}
 .figures-container figure:hover {
   opacity: 0.7;
   cursor: pointer;
   transition: all ease-out .4s;
+}
+.figures-container figure + figcaption {
+  text-align: center;
+  color: #33658a;
 }
 .figures-container div {
   display: inline-block;
@@ -249,5 +263,9 @@ article {
   color: #ffffff;
   cursor: pointer;
   padding: 8px 15px;
+}
+.fa-face-smile-wink {
+  margin-left: 5px;
+  margin-right: 10px;
 }
 
